@@ -12,13 +12,18 @@ class SelectBox extends Component {
         this.setState({
             value: e.target.value
         })
+        this.props.onSelectValue(e.target.value);
     }
 
     render() {
         return (
             <div>
-                <label className="select-box-component" htmlFor="select">{this.props.label}</label>
-                <select id="select" value={this.state.value} onChange={this.onChange.bind(this)}>
+                <label className="select-box-component"
+                    htmlFor="select">{this.props.label}
+                </label>
+                <select id="select"
+                    value={this.state.value}
+                    onChange={this.onChange.bind(this)}>
                     {this.props.options.map(option => {
                         return <option value={option} key={option} >{option}</option>
                     })}

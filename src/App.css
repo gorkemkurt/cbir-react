@@ -2,22 +2,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
   flex-direction: column;  
-}
-/* 
-.ImageDrop {
-  flex: 5;
-  max-width: 20vw;
-}
-
-.SelectBox {
-  flex: 1;
-  max-width: 20vw;
-} */
-
-.Gallery {
-  /* flex: 10; */
-  max-width: 10vw;
 }
